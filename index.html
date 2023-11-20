@@ -7,25 +7,70 @@
 <body>
 
 <article>
-    <h1>Nathaniel Lim</h1>
-    <h3 style="text-align: center;">Engineer — Designer</h3>
-    <section>
-        <h4>About Me</h4>
-        <p>I'm a graduate student in Mechanical Engineering at Stanford looking for internships for the summer of 2024.
+    <header>
+        <h1>Nathaniel Lim</h1>
+        <p class="author">
+          Engineer and Designer
+        </p>
+      </header>
+
+    <seccttion>
+        <h2>About Me</h2>
+        <p>I'm a graduate student in Mechanical Engineering at Stanford seeking internships for the summer of 2024.
            I take pride in my technical ability as well as my capacity for creativity. I use both to build things that bring people utility and joy.
         </p>
     </section>
-    
-    <section>
-        <h4>Projects</h4>
-        <p>Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa.</p>
-    </section>
 
     <section>
-        <h4>Section Heading 3</h4>
-        <p>Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        <h2>Experience</h2>
+        <p>
+        <h3>Tesla — Hardware Test Engineering</h3>
+        <p> Throughout my 2 internships with Tesla's test org, I was able to assume the responsibilities of a full- 
+            time test engineer and take end-to-end ownership of the mechanical, electrical, and control systems design
+            a number of critical component, system, and vehicle-level tests. Tests and 
+            fixtures I designed during these internships cost anywhere from $500 to $25,000 to produce and provided countless meaningful 
+            insights that were used to improve vehicle reliability, safety, and quality. <br />
+        <br />
+        <img src="ct.jpg" width="500" height="500" style="display: block; margin-left: auto; margin-right: auto;">
+        <h4>Projects</h4>
+        <b>1. 4-Bar Window Cycler (2022)</b>:
+        Wrote and utilized linkage synthesis tools in C to generate a 4-bar geometry capable of cycling a manual side window with 
+        an irregular handle sweep. I then used my kinematic tool to create a final design loaded the system in a human-representative manner while only requiring 1 actuator and 
+        relatively simple controls. <br /><br />
+
+        <b>2. Vertical Strength Testing Gantry (2023)</b>:
+        Designed and implemented a vertical gantry system capable of applying high loads to every +z surface on a vehicle. Structural design was 
+        driven by seismic loads and deflection criteria at the end effector. 
+        <br /><br />
+
+        <b>3. Cable Durability Test Rig (2022)</b>:
+        Designed and implemented a test rig and control system capable of durability testing 12 separate cables independently while continuously
+        collecting performance data and detecting failures. 
+        <br /><br />
+
+        </p>
     </section>
+
 </article>
+
+<div class="abstract">
+    <p><button id="dark-mode-toggle">Toggle dark mode</button></p>
+    <br />
+    <p>
+      e: nplim@stanford.edu <br />
+      t: (720) 556 - 6527 <br />
+      <a href="Lim_Nathaniel_CurrentResume_11-20.pdf" download>Download Resume</a> <br />
+      
+    </p>
+  </div>  
+
+  <script>
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle')
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('latex-dark')
+    })
+  </script>
 
 
 </body>
