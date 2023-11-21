@@ -4,28 +4,38 @@
     <title>Nathaniel Lim</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="latex-dark">
 
 <article>
     <header>
-        <h1>Nathaniel Lim</h1>
+        <h1><span style="color: #fb8e50;">Nathaniel Lim</span></h1>
         <p class="author">
-          Engineer and Designer
+          — Engineer and Designer —
         </p>
       </header>
 
-    <seccttion>
-        <h2>About Me</h2>
-        <p>I am a 1st year graduate student in Mechanical Engineering at Stanford University seeking internships for the summer of 2024.
-           I take pride in my technical ability as well as my capacity for creativity. I use both to build things that bring people utility and joy.
-        </p>
+    <section>
+        <h2 onclick="toggleCollapsible(this)"><span style="color: #fb8e50;">></span> About Me 
+        </h2>
+        <div class="collapsibleContent">
+            <p>I am a 1st year graduate student in Mechanical Engineering at Stanford University seeking internships for the summer of 2024.
+                I take pride in my technical ability as well as my capacity for creativity. I use both to build things that bring people utility and joy.
+             </p>
+        </div>
     </section>
 
     <section>
-        <h2>Experience</h2>
-        <p>
-        <h3>Tesla</h3>
-        <img src="Tesla_logo.png" width="30" height="30" style="display: block; margin-left: auto; margin-right: auto;">
+        <section>
+            <h2 onclick="toggleCollapsible(this)"> <span style="color: #fb8e50;">></span> Experience
+            </h2>
+            <div class="collapsibleContent">
+                <span>
+                <h3>
+                    <img src="Tesla_logo.png" alt="" style="display: inline-block; width:50px; height:50px; vertical-align: middle;
+                    margin-right: 20px;">
+                    Tesla
+                </h3>
+                </span>
         <p> Throughout my 2 internships with Tesla's hardware test org, I was able to assume the responsibilities of a full-time 
             test engineer and take end-to-end ownership of the mechanical, electrical, and control systems design
             a number of critical component, system, and vehicle-level tests. Tests and 
@@ -33,46 +43,71 @@
             insights that were used to improve vehicle reliability, safety, and quality. I've noted my favorite projects below. <br />
         <br />
         <img src="ct.jpg" width="500" height="500" style="display: block; margin-left: auto; margin-right: auto;">
+        
+        <span>
+            <h3>
+                <img src="ev.png" alt="" style="display: inline-block; width:50px; height:40px; vertical-align: middle;
+                margin-right: 15px;">
+                EcoCAR UC Davis
+            </h3>
+            </span>
 
-        <h3>EcoCAR UC Davis</h3>
-        <img src="horiz_transparent.png" width="100" height="30" style="display: block; margin-left: auto; margin-right: auto;">
-        <p>The EcoCAR EV challenge is a student competition in which teams compete to build the best next generation electric vehicle.
+        <p>The EcoCAR EV challenge is a student competition in which teams compete to build a next generation electric vehicle.
            As the system design and integration lead for UC Davis' team, I completed several notable individual projects in addition to my
            leadership responsibilities. 
         </p>    
-        <img src="IMG_45F7FC3B6169-1.jpeg" width="500" height="500" style="display: block; margin-left: auto; margin-right: auto;">
+        <br />
+        <img src="ecocar.jpg" width="600" height="400" style="display: block; margin-left: auto; margin-right: auto;">
+    </div>
+</section>
 
-        <h2>Projects</h2>
-        <h5>1. 4-Bar Window Cycler (Tesla)</h5>
+      
+    
+
+    <section>
+        <h2 onclick="toggleCollapsible(this)"> <span style="color: #fb8e50;">></span> Projects </h2>
+        <div class="collapsibleContent">
+        <br />
+        <span style="color: #fb8e50;">NOTE:</span> The below list is not exhaustive, but it conveys well my primary skills and interests.
+        <h5>1. 4-Bar Window Cycler (Tesla)</h5> 
         Wrote and utilized linkage synthesis tools in C to generate a 4-bar geometry capable of cycling a manual side window with 
         an irregular handle sweep. Final design was able to load the system in a human-representative manner while only requiring 1 actuator and 
         relatively simple controls. <br />
 
         <h5>2. Vertical Strength Testing Gantry (Tesla)</h5>
-        Designed and implemented a vertical gantry system capable of applying high loads to every +z surface on a vehicle. Structural design was 
-        driven by seismic loads and deflection criteria at the end effector. 
-        <br />
+        <p>
+        Designed and implemented a vertical gantry system capable of applying high loads to every +z surface on a vehicle. 
+        Structural design was driven by seismic loads and deflection criteria at the end effector. 
+        </p>
 
         <h5>3. Cable Durability Test Rig (Tesla)</h5>
         Designed and implemented a test rig and control system capable of durability testing 12 separate cables independently while continuously
         collecting performance data and detecting failures. 
-        <br />
+        
+        <label for="sn-anything" class="sidenote-toggle">CLICK</label>
+        <input type="checkbox" id="sn-anything" class="sidenote-toggle" />
+        <span class="sidenote"><span style="color: #fb8e50;">NOTE:</span> I can only disclose non-proprietary 
+        information regarding my work at Tesla.</span> 
 
         <h5>4. Custom Cadillac LYRIQ Subframe and Powertrain Mounting (EcoCAR)</h5>
         Designed and planned the integration of a custom chassis structure and mounting/packaging strategy for an energy efficient
         battery electric powertrain in a Cadillac LYRIQ. Involved managing and digesting top-level vehicle CAD,
         reverse engineering of physical vehicles through 3D scanning,
         and detailed structural analysis to ensure added structures met competition designated strength and stiffness requirements.<br />
+        <br />
         <img src="edu.png" width="600" height="300" style="display: block; margin-left: auto; margin-right: auto;">   
 
         <h5>5. Functional Small-Scale Prototype of Automotive Thermal Management System (EcoCAR)</h5>
         Designed and built a functioning scale model of a thermal management system for a Cadillac LYRIQ. A heating element 
         was used to simulate drive unit heat generation which was rejected by a pump-radiator-fan system controlled via
         Arduino.<br />
+        <br />
         <img src="thermal-removebg-preview.png" width="600" height="300" style="display: block; margin-left: auto; margin-right: auto;"> 
 
         </p>
+        </div>
     </section>
+</section>
 
 </article>
 
@@ -94,7 +129,19 @@
     darkModeToggle.addEventListener('click', () => {
       document.body.classList.toggle('latex-dark')
     })
+
+    function toggleCollapsible(element) {
+    var content = element.nextElementSibling;
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+    }
+}
+
   </script>
+
+  
 
 
 </body>

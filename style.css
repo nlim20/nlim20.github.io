@@ -103,7 +103,7 @@
   :root {
     --body-color: #343d46;
     --body-bg-color: hsl(210, 20%, 98%);
-    --link-visited: hsl(0, 100%, 33%);
+    --link-visited: #fb8e50;
     --link-focus-outline: hsl(220, 90%, 52%);
     --pre-bg-color: hsl(210, 28%, 93%);
     --kbd-bg-color: hsl(210, 5%, 100%);
@@ -123,7 +123,7 @@
   .latex-dark {
     --body-color: hsl(0, 0%, 86%);
     --body-bg-color: hsl(0, 0%, 16%);
-    --link-visited: hsl(196 80% 77%);
+    --link-visited: #fb8e50;
     --link-focus-outline: hsl(215, 63%, 73%);
     --pre-bg-color: hsl(0, 1%, 25%);
     --kbd-bg-color: hsl(0, 0%, 16%);
@@ -573,6 +573,10 @@
     top: -0.5rem;
     left: 0.1rem;
   }
+
+  .collapsibleContent {
+    display: none;
+}
   
   /* add number in front of the sidenote */
   .sidenote-number ~ .sidenote::before {
@@ -668,10 +672,12 @@
   
   /* Heading typography */
   h1 {
-    font-size: 6rem;
+    font-size: 4.8rem;
     line-height: 3.25rem;
     margin-bottom: 1.625rem;
   }
+
+  
   
   h2 {
     font-size: 2.6rem;
