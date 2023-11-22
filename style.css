@@ -368,6 +368,12 @@ h2:hover {
   /* You can add other properties like text-decoration, background-color, etc., as needed */
 }
 
+h4:hover {
+  color: #bcbcbc; /* Replace with the color you want */
+  cursor: pointer; /* Optional: Changes the cursor to a pointer to indicate it's clickable */
+  /* You can add other properties like text-decoration, background-color, etc., as needed */
+}
+
 caption::before {
   content: "Table " counter(caption) ". ";
   font-weight: bold;
@@ -715,9 +721,8 @@ h3 {
 }
 
 h4 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-top: 2rem;
-  font-variant-caps: small-caps;
 }
 
 h5 {

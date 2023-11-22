@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nathaniel Lim</title>
+    <title>N.lim</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body class="latex-dark">
     <article>
       <header>
         <h1>
-          <span style="color: #fb8e50">Nathaniel<br /></span>
-          <p></p>
-          <span style="color: #fb8e50">Lim</span>
+          Nathaniel
+          </h1>
+         <!-- <span style="color: #fb8e50">Nathaniel<br /></span>>-->
+          <p style="text-align:center"><span style="color: #fb8e50"><b>[Nate]</b> <br /><br /></span></p>
+          <h1 style="text-align:center">
+          Lim
           <h1>
         <p class="author">Engineer and Designer</p>
       </header>
 
       <section>
         <h2 onclick="toggleCollapsible(this)">
-          <span style="color: #fb8e50">></span> About Me
+          <span style="color: #fb8e50">+</span> About Me
         </h2>
-        <div class="collapsibleContent" style="display: block">
+        <div class="collapsibleContent">
           <p>
-            I am a grad student in Mechanical Engineering at
-            Stanford University. I take pride in my technical abilities as well
-            as my capacity for creativity. I try to use both to build things
-            that bring people utility and joy.
+            - I am a graduate student in Mechanical Engineering at
+            Stanford University. <br /> - I take pride in my capacity for creativity.
+            <br /> - I build things that bring utility and joy.
           </p>
           <h4>Core Skills</h4>
           <p>
@@ -117,7 +119,7 @@
       <section>
         <section>
           <h2 onclick="toggleCollapsible(this)">
-            <span style="color: #fb8e50">></span> Experience
+            <span style="color: #fb8e50">+</span> Experience
           </h2>
           <div class="collapsibleContent">
             <span>
@@ -191,14 +193,25 @@
 
         <section>
           <h2 onclick="toggleCollapsible(this)">
-            <span style="color: #fb8e50">></span> Projects
+            <span style="color: #fb8e50">+</span> Projects
           </h2>
-          <div class="collapsibleContent">
-            <br />
-            <span style="color: #fb8e50">NOTE:</span> The below list is not
-            exhaustive, but it conveys well my primary skills and interests.
-            <h5>1. 4-Bar Window Cycler (Tesla)</h5>
-            Wrote and utilized linkage synthesis tools in C to generate a 4-bar
+          <div class="collapsibleContent" style="padding-left: 30px;">
+  
+            <label for="sn-anything" class="sidenote-toggle"
+              ><span style="color: #fb8e50"
+                >[NOTE]
+              </span></label
+            >
+            <input type="checkbox" id="sn-anything" class="sidenote-toggle" />
+            <span class="sidenote"
+              ><span style="color: #fb8e50">NOTE:</span> This list is not exhaustive, but it gives a good feel for my
+              core skills and interests.</span
+            >
+
+            <div>
+              <h4 onclick="toggleCollapsible(this)"><span style="color: #fb8e50">+</span> 4-Bar Window Cycler (Tesla)</h4>
+              <div class="collapsibleContent">
+                Wrote and utilized linkage synthesis tools in C to generate a 4-bar
             geometry capable of cycling a manual side window with an irregular
             handle sweep. Final design was able to load the system in a
             human-representative manner while only requiring 1 actuator and
@@ -251,53 +264,62 @@
               />
             </p>
             <br />
+              </div>
+            </div>    
 
-            <h5>2. Vertical Strength Testing Gantry (Tesla)</h5>
-            <p>
-              Designed and implemented a vertical gantry system capable of
-              applying high loads to every +z surface on any passenger vehicle
-              or pickup truck. Structural design was driven by seismic loads and
-              deflection criteria at the end effector.
-            </p>
+            
+            <div>
+              <h4 onclick="toggleCollapsible(this)"><span style="color: #fb8e50">+</span> Overhead Strength Testing Gantry (Tesla)</h4>
+              <div class="collapsibleContent">
+                <p>
+                  Designed and implemented a vertical gantry system capable of
+                  applying high loads to every +z surface on any passenger vehicle
+                  or pickup truck. Structural design was driven by seismic loads and
+                  deflection criteria at the end effector.
+                </p>
+    
+                <p style="text-align: center">
+                  <img
+                    src="pos-removebg-preview (1).png"
+                    alt=""
+                    style="
+                      display: inline-block;
+                      width: 40px;
+                      height: 40px;
+                      vertical-align: middle;
+                      margin-right: 20px;
+                    "
+                  />
+                  <img
+                    src="stress-removebg-preview (1).png"
+                    alt=""
+                    style="
+                      display: inline-block;
+                      width: 40px;
+                      height: 40px;
+                      vertical-align: middle;
+                      margin-right: 20px;
+                    "
+                  />
+                  <img
+                    src="CAD.png"
+                    alt=""
+                    style="
+                      display: inline-block;
+                      width: 40px;
+                      height: 40px;
+                      vertical-align: middle;
+                      margin-right: 20px;
+                    "
+                  />
+                </p>
+                <br />
+              </div>
+            </div>
 
-            <p style="text-align: center">
-              <img
-                src="pos-removebg-preview (1).png"
-                alt=""
-                style="
-                  display: inline-block;
-                  width: 40px;
-                  height: 40px;
-                  vertical-align: middle;
-                  margin-right: 20px;
-                "
-              />
-              <img
-                src="stress-removebg-preview (1).png"
-                alt=""
-                style="
-                  display: inline-block;
-                  width: 40px;
-                  height: 40px;
-                  vertical-align: middle;
-                  margin-right: 20px;
-                "
-              />
-              <img
-                src="CAD.png"
-                alt=""
-                style="
-                  display: inline-block;
-                  width: 40px;
-                  height: 40px;
-                  vertical-align: middle;
-                  margin-right: 20px;
-                "
-              />
-            </p>
-            <br />
-
-            <h5>3. Cable Durability Test Rig (Tesla)</h5>
+            <div>
+              <h4 onclick="toggleCollapsible(this)"><span style="color: #fb8e50">+</span> Cable Durability Test Rig (Tesla)</h4>
+              <div class="collapsibleContent">
             Designed and implemented a test rig and control system capable of
             durability testing 12 separate cables independently while
             continuously collecting performance data and detecting failures for
@@ -350,22 +372,13 @@
               />
             </p>
             <br />
+              </div>
+            </div>
 
-            <label for="sn-anything" class="sidenote-toggle"
-              ><span style="color: #fb8e50"
-                >[NOTE]
-              </span></label
-            >
-            <input type="checkbox" id="sn-anything" class="sidenote-toggle" />
-            <span class="sidenote"
-              ><span style="color: #fb8e50">NOTE:</span> I can only disclose
-              non-proprietary information regarding my work at Tesla.</span
-            >
-
-            <h5>
-              4. Custom Cadillac LYRIQ Subframe and Powertrain Mounting (EcoCAR)
-            </h5>
-            Designed and planned the integration of a custom chassis structure
+            <div>
+              <h4 onclick="toggleCollapsible(this)"><span style="color: #fb8e50">+</span> Custom Cadillac LYRIQ Subframe and Powertrain Mounting (EcoCAR)</h4>
+              <div class="collapsibleContent">
+                Designed and planned the integration of a custom chassis structure
             and mounting/packaging strategy for a highly energy efficient
             electric powertrain in a Cadillac LYRIQ. Project involved managing
             and digesting top-level vehicle CAD, reverse engineering of physical
@@ -416,14 +429,18 @@
               />
             </p>
             <br />
-            <h5>
-              5. Functional Small-Scale Prototype of Automotive Thermal
-              Management System (EcoCAR)
-            </h5>
-            Designed and built a functioning scale model of a thermal management
+              </div>
+            </div>
+
+            <div>
+              <h4 onclick="toggleCollapsible(this)"><span style="color: #fb8e50">+</span> Functional Model of EV Thermal
+                Management System (EcoCAR)</h4>
+              <div class="collapsibleContent">
+                Designed and built a functioning scale model of a thermal management
             system for a Cadillac LYRIQ. A heating element was used to simulate
             drive unit heat generation which was rejected by a pump-radiator-fan
-            system controlled via Arduino.<br />
+            system controlled via Arduino. Project was used as a test platform for
+            various thermal control strategies and as a learning tool for new team members.<br />
             <br />
             <img
               src="thermal-removebg-preview.png"
@@ -468,8 +485,13 @@
               />
             </p>
             <br />
-            <h5>5. Hybrid Electric Go-Kart (Personal Project)</h5>
-            Designed and built a series hybrid-electric go-Kart with a 1.8kW
+              </div>
+            </div>
+
+            <div>
+              <h4 onclick="toggleCollapsible(this)"><span style="color: #fb8e50">+</span> Hybrid Electric Go-Kart (Personal Project)</h4>
+              <div class="collapsibleContent">
+                Designed and built a series hybrid-electric go-Kart with a 1.8kW
             electric motor, a lawnmower engine, and an alternator. Final design
             included a custom torsion bar suspension system. Chassis,
             suspension, and steering assembly were fabricated completely from
@@ -518,6 +540,9 @@
                 "
               />
             </p>
+              </div>
+            </div>
+
           </div>
         </section>
       </section>
