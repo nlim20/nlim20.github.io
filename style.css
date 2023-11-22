@@ -343,6 +343,10 @@ caption {
   margin-left: 0;
 }
 
+.small-break {
+  margin-top: 30px; /* Adjust the value to increase or decrease the space */
+}
+
 #dark-mode-toggle {
   background-color: #333; /* Dark gray background */
   color: white; /* White text */
