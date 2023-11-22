@@ -1,249 +1,529 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Nathaniel Lim</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body class="latex-dark">
-
-<article>
-    <header>
-        <h1><span style="color: #fb8e50;">Nathaniel Lim</span></h1>
-        <p class="author">
-          — Engineer and Designer —
-        </p>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="latex-dark">
+    <article>
+      <header>
+        <h1><span style="color: #fb8e50">Nathaniel Lim</span></h1>
+        <p class="author">— Engineer and Designer —</p>
       </header>
 
-    <section>
-        <h2 onclick="toggleCollapsible(this)"><span style="color: #fb8e50;">></span> About Me 
+      <section>
+        <h2 onclick="toggleCollapsible(this)">
+          <span style="color: #fb8e50">></span> About Me
         </h2>
         <div class="collapsibleContent">
-            <p>I am a 1st year graduate student in Mechanical Engineering at Stanford University seeking internships for the summer of 2024.
-                I take pride in my technical ability as well as my capacity for creativity. I use both to build things that bring people utility and joy.
-            </p>
-            <h4>Core Skills</h4>
-            <p>
-                <span>
-                    <p>
-                        <img src="pos-removebg-preview (1).png" alt="" style="display: inline-block; width:40px; height:40px; vertical-align: middle;
-                        margin-right: 20px;">
-                        Mechanical/Electromechanical Systems Design
-                    </p>
-                </span> 
-                <span>
-                    <p>
-                        <img src="CAD.png" alt="" style="display: inline-block; width:40px; height:40px; vertical-align: middle;
-                        margin-right: 20px;">
-                        CAD (CATIA V5/V6, Siemens NX, SolidWorks, Fusion 360)
-                    </p>
-                </span>
-                <span>
-                    <p>
-                        <img src="conv-removebg-preview.png" alt="" style="display: inline-block; width:40px; height:23px; vertical-align: middle;
-                        margin-right: 20px;">
-                        Automation
-                    </p>
-                </span>
-                <span>
-                    <p>
-                        <img src="stress-removebg-preview (1).png" alt="" style="display: inline-block; width:40px; height:32px; vertical-align: middle;
-                        margin-right: 20px;">
-                        FEA/CAE (Simcenter NASTRAN, ANSYS)
-                    </p>
-                </span>
-                <span>
-                    <p>
-                        <img src="loop-removebg-preview.png" alt="" style="display: inline-block; width:40px; height:18px; vertical-align: middle;
-                        margin-right: 20px;">
-                        Control Systems Design
-                    </p>
-                </span>
-            </p>
-        </div>
-    </section>
-
-    <section>
-        <section>
-            <h2 onclick="toggleCollapsible(this)"> <span style="color: #fb8e50;">></span> Experience
-            </h2>
-            <div class="collapsibleContent">
-                <span>
-                <h3>
-                    <img src="Tesla_logo.png" alt="" style="display: inline-block; width:50px; height:50px; vertical-align: middle;
-                    margin-right: 20px;">
-                    Tesla
-                </h3>
-                </span>
-        <p> Throughout my 2 internships with Tesla's hardware test org, I was able to assume the responsibilities of a full-time 
-            test engineer and take end-to-end ownership of the mechanical, electrical, and control systems design
-            a number of critical component, system, and vehicle-level tests. Tests and 
-            fixtures I designed during these internships cost anywhere from $500 to $25,000 to produce and provided countless meaningful 
-            insights that were used to improve vehicle reliability, safety, and quality. I've noted my favorite projects below. <br />
-        <br />
-        <img src="ct.jpg" width="500" height="500" style="display: block; margin-left: auto; margin-right: auto;">
-        
-        <span>
-            <h3>
-                <img src="ev.png" alt="" style="display: inline-block; width:50px; height:40px; vertical-align: middle;
-                margin-right: 15px;">
-                EcoCAR UC Davis
-            </h3>
+          <p>
+            I am a 1st year graduate student in Mechanical Engineering at
+            Stanford University seeking internships for the summer of 2024. I
+            take pride in my technical abilities as well as my capacity for
+            creativity. I try to use both to build things that bring people
+            utility and joy.
+          </p>
+          <h4>Core Skills</h4>
+          <p>
+            <span>
+              <p>
+                <img
+                  src="pos-removebg-preview (1).png"
+                  alt=""
+                  style="
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    vertical-align: middle;
+                    margin-right: 20px;
+                  "
+                />
+                Mechanical/Electromechanical Systems Design
+              </p>
             </span>
-
-        <p>The EcoCAR EV challenge is a student competition in which teams compete to build a next generation electric vehicle.
-           As the system design and integration lead for UC Davis' team, I completed several notable individual projects in addition to my
-           leadership responsibilities. 
-        </p>    
-        <br />
-        <img src="ecocar.jpg" width="600" height="400" style="display: block; margin-left: auto; margin-right: auto;">
-    </div>
-</section>
-
-      
-    
-
-    <section>
-        <h2 onclick="toggleCollapsible(this)"> <span style="color: #fb8e50;">></span> Projects </h2>
-        <div class="collapsibleContent">
-        <br />
-        <span style="color: #fb8e50;">NOTE:</span> The below list is not exhaustive, but it conveys well my primary skills and interests.
-        <h5>1. 4-Bar Window Cycler (Tesla)</h5> 
-        Wrote and utilized linkage synthesis tools in C to generate a 4-bar geometry capable of cycling a manual side window with 
-        an irregular handle sweep. Final design was able to load the system in a human-representative manner while only requiring 1 actuator and 
-        relatively simple controls. <br />
-
-        <p style="text-align: center;">
-            <img src="pos-removebg-preview (1).png" alt="" style="display: inline-block; width:40px; height:40px; vertical-align: middle;
-            margin-right: 20px;">
-            <img src="CAD.png" alt="" style="display: inline-block; width:40px; height:40px; vertical-align: middle;
-            margin-right: 20px;">
-            <img src="conv-removebg-preview.png" alt="" style="display: inline-block; width:40px; height:23px; vertical-align: middle;
-            margin-right: 20px;">
-            <img src="loop-removebg-preview.png" alt="" style="display: inline-block; width:40px; height:18px; vertical-align: middle;
-            margin-right: 20px;">
-        </p>
-
-
-        <h5>2. Vertical Strength Testing Gantry (Tesla)</h5>
-        <p>
-        Designed and implemented a vertical gantry system capable of applying high loads to every +z surface on a vehicle. 
-        Structural design was driven by seismic loads and deflection criteria at the end effector. 
-        </p>
-
-        <p style="text-align: center;">
-            <img src="pos-removebg-preview (1).png" alt="" style="display: inline-block; width:40px; height:40px; vertical-align: middle;
-            margin-right: 20px;">
-            <img src="CAD.png" alt="" style="display: inline-block; width:40px; height:40px; vertical-align: middle;
-            margin-right: 20px;">
-        </p>
-
-        <h5>3. Cable Durability Test Rig (Tesla)</h5>
-        Designed and implemented a test rig and control system capable of durability testing 12 separate cables independently while continuously
-        collecting performance data and detecting failures. 
-
-        <p style="text-align: center;">
-            <img src="pos-removebg-preview (1).png" alt="" style="display: inline-block; width:40px; height:40px; vertical-align: middle;
-            margin-right: 20px;">
-            <img src="CAD.png" alt="" style="display: inline-block; width:40px; height:40px; vertical-align: middle;
-            margin-right: 20px;">
-            <img src="conv-removebg-preview.png" alt="" style="display: inline-block; width:40px; height:23px; vertical-align: middle;
-            margin-right: 20px;">
-            <img src="loop-removebg-preview.png" alt="" style="display: inline-block; width:40px; height:18px; vertical-align: middle;
-            margin-right: 20px;">
-        </p>
-        
-        <label for="sn-anything" class="sidenote-toggle"><span style="color: #fb8e50;">NOTE:</span></label>
-        <input type="checkbox" id="sn-anything" class="sidenote-toggle" />
-        <span class="sidenote"><span style="color: #fb8e50;">NOTE:</span> I can only disclose non-proprietary 
-        information regarding my work at Tesla.</span> 
-
-        <h5>4. Custom Cadillac LYRIQ Subframe and Powertrain Mounting (EcoCAR)</h5>
-        Designed and planned the integration of a custom chassis structure and mounting/packaging strategy for an energy efficient
-        battery electric powertrain in a Cadillac LYRIQ. Involved managing and digesting top-level vehicle CAD,
-        reverse engineering of physical vehicles through 3D scanning,
-        and detailed structural analysis to ensure added structures met competition designated strength and stiffness requirements.<br />
-        <br />
-        <img src="edu.png" width="600" height="300" style="display: block; margin-left: auto; margin-right: auto;">   
-
-        <p style="text-align: center;">
-            <img src="pos-removebg-preview (1).png" alt="" style="display: inline-block; width:40px; height:40px; vertical-align: middle;
-            margin-right: 20px;">
-            <img src="CAD.png" alt="" style="display: inline-block; width:40px; height:40px; vertical-align: middle;
-            margin-right: 20px;">
-        </p>
-
-        <h5>5. Functional Small-Scale Prototype of Automotive Thermal Management System (EcoCAR)</h5>
-        Designed and built a functioning scale model of a thermal management system for a Cadillac LYRIQ. A heating element 
-        was used to simulate drive unit heat generation which was rejected by a pump-radiator-fan system controlled via
-        Arduino.<br />
-        <br />
-        <img src="thermal-removebg-preview.png" width="600" height="300" style="display: block; margin-left: auto; margin-right: auto;"> 
-
-        <p style="text-align: center;">
-            <img src="pos-removebg-preview (1).png" alt="" style="display: inline-block; width:40px; height:40px; vertical-align: middle;
-            margin-right: 20px;">
-            <img src="CAD.png" alt="" style="display: inline-block; width:40px; height:40px; vertical-align: middle;
-            margin-right: 20px;">
-            <img src="loop-removebg-preview.png" alt="" style="display: inline-block; width:40px; height:18px; vertical-align: middle;
-            margin-right: 20px;">
-        </p>
-
-        <h5>5. Hybrid Electric Go-Kart (Personal Project)</h5>
-        Designed and built a series hybrid-electric go-Kart with a 1.8kW electric motor, a lawnmower engine, and an alternator.
-        Final design included a custom torsion bar suspension system. Chassis, suspension, and 
-        steering assembly were fabricated completely from raw materials.
-        <br />
-        <br />
-        <img src="kart.jpeg" width="600" height="300" style="display: block; margin-left: auto; margin-right: auto;"> 
-
-        <p style="text-align: center;">
-            <img src="pos-removebg-preview (1).png" alt="" style="display: inline-block; width:40px; height:40px; vertical-align: middle;
-            margin-right: 20px;">
-            <img src="CAD.png" alt="" style="display: inline-block; width:40px; height:40px; vertical-align: middle;
-            margin-right: 20px;">
-            <img src="loop-removebg-preview.png" alt="" style="display: inline-block; width:40px; height:18px; vertical-align: middle;
-            margin-right: 20px;">
-        </p>
-
-        </p>
+            <span>
+              <p>
+                <img
+                  src="CAD.png"
+                  alt=""
+                  style="
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    vertical-align: middle;
+                    margin-right: 20px;
+                  "
+                />
+                CAD (CATIA V5/V6, Siemens NX, SolidWorks, Fusion 360)
+              </p>
+            </span>
+            <span>
+              <p>
+                <img
+                  src="conv-removebg-preview.png"
+                  alt=""
+                  style="
+                    display: inline-block;
+                    width: 40px;
+                    height: 23px;
+                    vertical-align: middle;
+                    margin-right: 20px;
+                  "
+                />
+                Automation
+              </p>
+            </span>
+            <span>
+              <p>
+                <img
+                  src="stress-removebg-preview (1).png"
+                  alt=""
+                  style="
+                    display: inline-block;
+                    width: 40px;
+                    height: 32px;
+                    vertical-align: middle;
+                    margin-right: 20px;
+                  "
+                />
+                FEA/CAE (Simcenter NASTRAN, ANSYS)
+              </p>
+            </span>
+            <span>
+              <p>
+                <img
+                  src="loop-removebg-preview.png"
+                  alt=""
+                  style="
+                    display: inline-block;
+                    width: 40px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-right: 20px;
+                  "
+                />
+                Control Systems Design
+              </p>
+            </span>
+          </p>
         </div>
-    </section>
-</section>
+      </section>
 
-</article>
+      <section>
+        <section>
+          <h2 onclick="toggleCollapsible(this)">
+            <span style="color: #fb8e50">></span> Experience
+          </h2>
+          <div class="collapsibleContent">
+            <span>
+              <h3>
+                <img
+                  src="Tesla_logo.png"
+                  alt=""
+                  style="
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    vertical-align: middle;
+                    margin-right: 20px;
+                  "
+                />
+                Tesla
+              </h3>
+            </span>
+            <p>
+              Through 2 internships with Tesla's hardware test org, I was able
+              to assume the responsibilities of a full-time test engineer and
+              take end-to-end ownership of the mechanical, electrical, and
+              controls design of a number of critical component, system, and
+              vehicle-level tests. Tests and fixtures I designed during these
+              internships cost anywhere from $500 to $25,000 to produce and
+              provided countless meaningful insights that were used to improve
+              vehicle reliability, safety, and quality. I've noted my favorite
+              projects below. <br />
+              <br />
+              <img
+                src="ct.jpg"
+                width="500"
+                height="500"
+                style="display: block; margin-left: auto; margin-right: auto"
+              />
 
-<div class="abstract">
-    <p><button id="dark-mode-toggle">Toggle dark mode</button></p>
-    <br />
-    <p>
-      e: nplim@stanford.edu <br />
-      t: (720) 556 - 6527 <br />
-      <a href="https://www.linkedin.com/in/nathaniel-lim-4a6090199/">LinkedIn </a>  <br />
-      <a href="Lim_Nathaniel_CurrentResume_11-20.pdf" download>Download Resume</a> <br />
-      
-    </p>
-  </div>  
+              <span>
+                <h3>
+                  <img
+                    src="ev.png"
+                    alt=""
+                    style="
+                      display: inline-block;
+                      width: 50px;
+                      height: 40px;
+                      vertical-align: middle;
+                      margin-right: 15px;
+                    "
+                  />
+                  EcoCAR UC Davis
+                </h3>
+              </span>
+            </p>
 
-  <script>
+            <p>
+              The EcoCAR EV challenge is a student competition in which teams
+              compete to build a next generation electric vehicle. As the system
+              design and integration lead for the UC Davis team, I completed
+              several notable individual projects in addition to my leadership
+              responsibilities.
+            </p>
+            <br />
+            <img
+              src="ecocar.jpg"
+              width="600"
+              height="400"
+              style="display: block; margin-left: auto; margin-right: auto"
+            />
+          </div>
+        </section>
 
-    const darkModeToggle = document.getElementById('dark-mode-toggle')
-    darkModeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('latex-dark')
-    })
+        <section>
+          <h2 onclick="toggleCollapsible(this)">
+            <span style="color: #fb8e50">></span> Projects
+          </h2>
+          <div class="collapsibleContent">
+            <br />
+            <span style="color: #fb8e50">NOTE:</span> The below list is not
+            exhaustive, but it conveys well my primary skills and interests.
+            <h5>1. 4-Bar Window Cycler (Tesla)</h5>
+            Wrote and utilized linkage synthesis tools in C to generate a 4-bar
+            geometry capable of cycling a manual side window with an irregular
+            handle sweep. Final design was able to load the system in a
+            human-representative manner while only requiring 1 actuator and
+            relatively simple controls. <br />
 
-    function toggleCollapsible(element) {
-    var content = element.nextElementSibling;
-    if (content.style.display === "block") {
-        content.style.display = "none";
-    } else {
-        content.style.display = "block";
-    }
-}
+            <p style="text-align: center">
+              <img
+                src="pos-removebg-preview (1).png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+              <img
+                src="CAD.png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+              <img
+                src="conv-removebg-preview.png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 23px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+              <img
+                src="loop-removebg-preview.png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 18px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+            </p>
 
-  </script>
+            <h5>2. Vertical Strength Testing Gantry (Tesla)</h5>
+            <p>
+              Designed and implemented a vertical gantry system capable of
+              applying high loads to every +z surface on any passenger vehicle
+              or pickup truck. Structural design was driven by seismic loads and
+              deflection criteria at the end effector.
+            </p>
 
-  
+            <p style="text-align: center">
+              <img
+                src="pos-removebg-preview (1).png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+              <img
+                src="CAD.png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+            </p>
 
+            <h5>3. Cable Durability Test Rig (Tesla)</h5>
+            Designed and implemented a test rig and control system capable of
+            durability testing 12 separate cables independently while
+            continuously collecting performance data and detecting failures for
+            each.
 
-</body>
+            <p style="text-align: center">
+              <img
+                src="pos-removebg-preview (1).png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+              <img
+                src="CAD.png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+              <img
+                src="conv-removebg-preview.png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 23px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+              <img
+                src="loop-removebg-preview.png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 18px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+            </p>
+
+            <label for="sn-anything" class="sidenote-toggle"
+              ><span style="color: #fb8e50"
+                >Click for a note regarding confidentiality.
+              </span></label
+            >
+            <input type="checkbox" id="sn-anything" class="sidenote-toggle" />
+            <span class="sidenote"
+              ><span style="color: #fb8e50">NOTE:</span> I can only disclose
+              non-proprietary information regarding my work at Tesla.</span
+            >
+
+            <h5>
+              4. Custom Cadillac LYRIQ Subframe and Powertrain Mounting (EcoCAR)
+            </h5>
+            Designed and planned the integration of a custom chassis structure
+            and mounting/packaging strategy for a highly energy efficient
+            electric powertrain in a Cadillac LYRIQ. Project involved managing
+            and digesting top-level vehicle CAD, reverse engineering of physical
+            vehicle through 3D scanning, and detailed structural analyses to
+            ensure the added structures met competition designated strength and
+            stiffness requirements.<br />
+            <br />
+            <img
+              src="edu.png"
+              width="600"
+              height="300"
+              style="display: block; margin-left: auto; margin-right: auto"
+            />
+
+            <p style="text-align: center">
+              <img
+                src="pos-removebg-preview (1).png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+              <img
+                src="CAD.png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+            </p>
+
+            <h5>
+              5. Functional Small-Scale Prototype of Automotive Thermal
+              Management System (EcoCAR)
+            </h5>
+            Designed and built a functioning scale model of a thermal management
+            system for a Cadillac LYRIQ. A heating element was used to simulate
+            drive unit heat generation which was rejected by a pump-radiator-fan
+            system controlled via Arduino.<br />
+            <br />
+            <img
+              src="thermal-removebg-preview.png"
+              width="600"
+              height="300"
+              style="display: block; margin-left: auto; margin-right: auto"
+            />
+
+            <p style="text-align: center">
+              <img
+                src="pos-removebg-preview (1).png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+              <img
+                src="CAD.png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+              <img
+                src="loop-removebg-preview.png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 18px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+            </p>
+
+            <h5>5. Hybrid Electric Go-Kart (Personal Project)</h5>
+            Designed and built a series hybrid-electric go-Kart with a 1.8kW
+            electric motor, a lawnmower engine, and an alternator. Final design
+            included a custom torsion bar suspension system. Chassis,
+            suspension, and steering assembly were fabricated completely from
+            raw materials.
+            <br />
+            <br />
+            <img
+              src="kart.jpeg"
+              width="600"
+              height="300"
+              style="display: block; margin-left: auto; margin-right: auto"
+            />
+
+            <p style="text-align: center">
+              <img
+                src="pos-removebg-preview (1).png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+              <img
+                src="CAD.png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+              <img
+                src="loop-removebg-preview.png"
+                alt=""
+                style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 18px;
+                  vertical-align: middle;
+                  margin-right: 20px;
+                "
+              />
+            </p>
+          </div>
+        </section>
+      </section>
+    </article>
+
+    <div class="abstract">
+      <p><button id="dark-mode-toggle">Toggle dark mode</button></p>
+      <br />
+      <p>
+        e: nplim@stanford.edu <br />
+        t: (720) 556 - 6527 <br />
+        <a href="https://www.linkedin.com/in/nathaniel-lim-4a6090199/"
+          >LinkedIn
+        </a>
+        <br />
+        <a href="Lim_Nathaniel_CurrentResume_11-20.pdf" download
+          >Download Resume</a
+        >
+        <br />
+      </p>
+    </div>
+
+    <script>
+      const darkModeToggle = document.getElementById("dark-mode-toggle");
+      darkModeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("latex-dark");
+      });
+
+      function toggleCollapsible(element) {
+        var content = element.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      }
+    </script>
+  </body>
 </html>
