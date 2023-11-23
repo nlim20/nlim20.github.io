@@ -218,6 +218,10 @@ p.no-indent {
   text-indent: 0;
 }
 
+#imageContainer {
+  text-align: center;
+}
+
 .indent-pars ol p,
 .indent-pars ul p {
   text-indent: 0;
@@ -355,6 +359,7 @@ caption {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
   /* You might also want to add some hover effect */
 }
 

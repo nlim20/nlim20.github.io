@@ -7,7 +7,7 @@
   </head>
   <body class="latex-dark">
     <article>
-      <header>
+      <header id="imageContainer">
         <img
           src="titleBlock.png"
           alt=""
@@ -18,7 +18,6 @@
             height: 163px;
             vertical-align: middle;
             margin-right: 20px;
-            text-align: center;
           "
         />
         <img
@@ -31,7 +30,6 @@
             height: 163px;
             vertical-align: middle;
             margin-right: 20px;
-            text-align: center;
           "
         />
       </header>
@@ -40,7 +38,7 @@
         <h2 onclick="toggleCollapsible(this)">
           <span style="color: #fb8e50">+</span> About Me
         </h2>
-        <div class="collapsibleContent">
+        <div class="collapsibleContent" style="padding-left: 40px">
           <p>
             - I am a graduate student in Mechanical Engineering at Stanford
             University. <br />
@@ -140,7 +138,7 @@
           <h2 onclick="toggleCollapsible(this)">
             <span style="color: #fb8e50">+</span> Experience
           </h2>
-          <div class="collapsibleContent">
+          <div class="collapsibleContent" style="padding-left: 40px">
             <span>
               <h3>
                 <img
@@ -214,7 +212,7 @@
           <h2 onclick="toggleCollapsible(this)">
             <span style="color: #fb8e50">+</span> Projects
           </h2>
-          <div class="collapsibleContent" style="padding-left: 30px">
+          <div class="collapsibleContent" style="padding-left: 40px">
             <label for="sn-anything" class="sidenote-toggle"
               ><span style="color: #fb8e50">[NOTE] </span></label
             >
@@ -606,19 +604,11 @@
         var darkImage = document.getElementById("darkImage");
 
         if (lightImage.style.display === "none") {
-          lightImage.style.display = "block";
-          lightImage.style.width = "400px";
-          lightImage.style.height = "163px";
-          lightImage.style.marginRight = "20px";
-          lightImage.style.textAlign = "center";
+          lightImage.style.display = "inline-block";
           darkImage.style.display = "none";
         } else {
           lightImage.style.display = "none";
-          darkImage.style.display = "block";
-          darkImage.style.width = "400px";
-          darkImage.style.height = "163px";
-          darkImage.style.marginRight = "20px";
-          darkImage.style.textAlign = "center";
+          darkImage.style.display = "inline-block";
         }
       });
 
