@@ -7,16 +7,31 @@
   </head>
   <body class="latex-dark">
     <article>
-      <header style="text-align: center">
+      <header>
         <img
           src="titleBlock.png"
           alt=""
+          id="darkImage"
           style="
             display: inline-block;
             width: 400px;
             height: 163px;
             vertical-align: middle;
             margin-right: 20px;
+            text-align: center;
+          "
+        />
+        <img
+          src="titleBlockDark.png"
+          alt=""
+          id="lightImage"
+          style="
+            display: none;
+            width: 400px;
+            height: 163px;
+            vertical-align: middle;
+            margin-right: 20px;
+            text-align: center;
           "
         />
       </header>
@@ -587,6 +602,24 @@
       const darkModeToggle = document.getElementById("dark-mode-toggle");
       darkModeToggle.addEventListener("click", () => {
         document.body.classList.toggle("latex-dark");
+        var lightImage = document.getElementById("lightImage");
+        var darkImage = document.getElementById("darkImage");
+
+        if (lightImage.style.display === "none") {
+          lightImage.style.display = "block";
+          lightImage.style.width = "400px";
+          lightImage.style.height = "163px";
+          lightImage.style.marginRight = "20px";
+          lightImage.style.textAlign = "center";
+          darkImage.style.display = "none";
+        } else {
+          lightImage.style.display = "none";
+          darkImage.style.display = "block";
+          darkImage.style.width = "400px";
+          darkImage.style.height = "163px";
+          darkImage.style.marginRight = "20px";
+          darkImage.style.textAlign = "center";
+        }
       });
 
       function toggleCollapsible(element) {

@@ -605,6 +605,23 @@ dl dd {
   left: 0.1rem;
 }
 
+.latex-dark .light-mode-img {
+  display: inline-block; /* Show in light mode */
+}
+
+.latex-dark .dark-mode-img {
+  display: none; /* Hide in light mode */
+}
+
+/* You might also need to add rules for when .latex-dark is not present */
+body:not(.latex-dark) .light-mode-img {
+  display: inline-block;
+}
+
+body:not(.latex-dark) .dark-mode-img {
+  display: none;
+}
+
 .collapsibleContent {
   display: none;
 }
